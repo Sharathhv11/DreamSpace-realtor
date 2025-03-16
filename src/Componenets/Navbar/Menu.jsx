@@ -6,7 +6,7 @@ const Menu = ({visiblity,setVisibility}) => {
 
 
   return (
-    <div className={` w-full h-[100vh] relative z-10 ${visiblity} glass justify-center items-center relative `} >
+    <div className={` w-full h-[100vh]  z-10 ${visiblity} glass justify-center items-center fixed top-0 `} >
         <button onClick={setVisibility} className='absolute top-[-5px] right-[-13px] m-8'>
             <X color="white"/>
         </button>

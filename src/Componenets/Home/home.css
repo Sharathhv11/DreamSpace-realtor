@@ -57,9 +57,10 @@
         white-space: wrap;
     }
 
-    /* .title{
-        line-height: 10px;
-    } */
+    .title{
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
 
     .slogan{
         font-size: 1.7rem;

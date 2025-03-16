@@ -36,6 +36,12 @@ const Home = () => {
           />
         </div>
       </div>
+
+      <div className="w-full h-[2px] bg-gray-500 my-2 mx-auto "></div>
+
+      <div className="w-full h-[200px]">
+
+      </div>
     </main>
   );
 };

@@ -6,6 +6,15 @@ import Home from "./../src/Componenets/Home/Home"
 function App() {
 
   const [visiblity,setVisibility] = useState("hidden");
+  
+  const [mode,setMode] = useState("light")
+
+  const changeMode = function(){
+    if( mode === "light" )
+        setMode("dark");
+    else
+        setMode("light");
+  }
 
     const makeVisible = function(){
         if( visiblity ===  "hidden" )
@@ -15,9 +24,9 @@ function App() {
     }
 
   return <>
-  <Home/>
-  <Navbar setVisibility={makeVisible}/>
-  <Menu visiblity={visiblity}  setVisibility={makeVisible}/>
+  <Home mode={mode} changeMode={changeMode}/>
+  <Navbar setVisibility={makeVisible} mode={mode} changeMode={changeMode}/>
+  <Menu visiblity={visiblity}  setVisibility={makeVisible} mode={mode} changeMode={changeMode}/>
   </>
 }
 
