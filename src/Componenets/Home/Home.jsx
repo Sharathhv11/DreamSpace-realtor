@@ -1,27 +1,41 @@
 import React from "react";
 import "./home.css";
 import construction from "./../../assets/construction.png";
+import Footer from "./Footer";
 
-const Home = () => {
+const Home = ({ mode }) => {
   return (
-    <main className="home px-5">
-      <div className="flex  justify-center items-center h-full section1-container ">
-        <div className="w-[60%] h-full  flex justify-center items-center flex-col gap-y-4  main-headers-container ">
-
-          <div className=" w-full">
-            <h1 className="text-white heading font-extrabold whitespace-nowrap title">
+    <main
+      className={`home  transition-all duration-300 ${
+        mode === "light" ? "bg-white" : "bg-black"
+      }`}
+    >
+      <div className=" px-5 flex justify-center items-center h-full section1-container">
+        <div className="w-[60%] h-full flex justify-center items-center flex-col gap-y-4 main-headers-container">
+          <div className="w-full">
+            <h1
+              className={`heading font-extrabold whitespace-nowrap title transition-all duration-300 
+              ${mode === "light" ? "text-black" : "text-white"}`}
+            >
               DreamSpace realtors
             </h1>
           </div>
 
-          <div className=" w-[100%] slogan-container ">
+          <div className="w-[100%] slogan-container">
             <span>
-              <h3 className="text-white poppins-regular text-4xl font-semibold slogan">
+              <h3
+                className={`poppins-regular text-4xl font-semibold slogan transition-all duration-300 
+                ${mode === "light" ? "text-black" : "text-white"}`}
+              >
                 We stand,
               </h3>
             </span>
             <span>
-              <h3 className="text-[#00FF3C] poppins-regular font-semibold text-4xl slogan">
+              <h3
+                className={`poppins-regular font-semibold text-4xl slogan ${
+                  mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                } `}
+              >
                 towards your dream.
               </h3>
             </span>
@@ -31,30 +45,225 @@ const Home = () => {
         <div className="w-[40%] h-full main-image-container">
           <img
             src={construction}
-            alt=""
-            className="w-full h-full object-contain"
+            alt="Construction"
+            className={`w-full h-full object-contain transition-all duration-300 `}
           />
         </div>
       </div>
 
-      <div className="w-full h-[2px] bg-gray-500 my-2 mx-auto "></div>
+      <div
+        className={`w-full h-[2px]  mx-auto transition-all duration-300 
+        ${mode === "light" ? "bg-gray-300" : "bg-gray-500"}`}
+      ></div>
 
-      <div className="w-full h-[200px]">
-
+      <div
+        className={`px-5 About w-full h-[50vh] transition-all duration-300 gap-x-3 ${
+          mode === "light" ? "bg-white" : "bg-black"
+        } flex`}
+        id="11"
+      >
+        <div className="w-[40%] h-full  about-image">
+          <img
+            src={construction}
+            alt="Construction"
+            className={`w-full h-full object-contain transition-all duration-300 `}
+          />
+        </div>
+        <div className="w-[60%] h-full  about-container">
+          <div className="w-full h-[30%]  flex justify-center items-center">
+            <h3
+              className={`poppins-regular font-semibold text-4xl slogan h-[30%]   mt-3 ${
+                mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+              }  `}
+            >
+              About DreamSpace
+            </h3>
+          </div>
+          <div className="w-full h-[70%] ">
+            <p
+              className={` ${
+                mode === "light" ? "text-black" : "text-white"
+              } text-justify poppins-regular`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Adipisci, recusandae totam fugit repellat expedita maiores veniam
+              itaque minima ducimus! Ab accusantium, aspernatur labore rerum
+              impedit esse? Et nemo amet ullam. Mollitia nesciunt soluta maiores
+              facere,
+            </p>
+          </div>
+        </div>
       </div>
+
+      <div
+        className={`w-full h-[2px] mt-4 mx-auto transition-all duration-300 ${
+          mode === "light" ? "bg-gray-300" : "bg-gray-500"
+        }`}
+      ></div>
+
+      <div
+        className={`w-full transition-all duration-300 py-10 ${
+          mode === "light" ? "bg-white" : "bg-black"
+        }`}
+      >
+        {/* Header */}
+        <div className="w-full flex justify-center items-center px-5 mb-10">
+          <h3
+            className={`poppins-regular font-semibold text-4xl ${
+              mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+            }`}
+          >
+            Our Services
+          </h3>
+        </div>
+
+        {/* Services Grid Container */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-5 md:px-10">
+          {/* Service Card 1 */}
+          <div
+            className={`flex flex-col justify-center items-start p-6 rounded-2xl shadow-lg border border-gray-200 
+      ${mode === "light" ? "bg-white text-black" : "bg-black text-white"} 
+      hover:scale-[1.05] transition-transform duration-300 cursor-pointer`}
+          >
+            <h3
+              className={`font-semibold text-2xl mb-3 ${
+                mode === "light" ? "text-black" : "text-white"
+              }`}
+            >
+              Building Construction
+            </h3>
+            <ul className="text-lg space-y-2">
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                Engineering Planning
+              </li>
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                Interior Designing
+              </li>
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                Construction
+              </li>
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                Exterior Design
+              </li>
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                Structural Work
+              </li>
+            </ul>
+          </div>
+
+          {/* Service Card 2 */}
+          <div
+            className={`flex flex-col justify-center items-start p-6 rounded-2xl shadow-lg border border-gray-200 
+      ${mode === "light" ? "bg-white text-black" : "bg-black text-white"} 
+      hover:scale-[1.05] transition-transform duration-300 cursor-pointer`}
+          >
+            <h3
+              className={`font-semibold text-2xl mb-3 ${
+                mode === "light" ? "text-black" : "text-white"
+              }`}
+            >
+              Architecture & Design
+            </h3>
+            <ul className="text-lg space-y-2">
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                Conceptual Designing
+              </li>
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                3D Visualization
+              </li>
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                Project Management
+              </li>
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                Site Analysis
+              </li>
+              <li className="flex items-center gap-2">
+                <span
+                  className={` ${
+                    mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+                  }`}
+                >
+                  •
+                </span>{" "}
+                Space Planning
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={`w-full h-[2px] mt-4 mx-auto transition-all duration-300 ${
+          mode === "light" ? "bg-gray-300" : "bg-gray-500"
+        }`}
+      ></div>
+
+      <Footer/>
     </main>
   );
 };
 
 export default Home;
-
-{
-  /* <div className="relative top-12 left-[-80px]">
-          
-
-          
-        </div>
-        <div>
-          <img src={construction} alt="construction" />
-        </div> */
-}

@@ -67,6 +67,26 @@
         
     }
 
+    .about-image{
+        display: none;
+    }
+
+    .about-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     
 }
 
+.whatsapp-container{
+    width:100vw;
+    max-width:500px;
+    min-width:200px;
+    height: 150px;
+    background-color: #383BEC;
+    border-radius: 14px;
+}
