@@ -2,6 +2,8 @@ import React from "react";
 import "./home.css";
 import construction from "./../../assets/construction.png";
 import Footer from "./Footer";
+import Slider from "./Slider" 
+import aboutImage from "./../../assets/IMG-20250316-WA0005.jpg"
 
 const Home = ({ mode }) => {
   return (
@@ -57,14 +59,14 @@ const Home = ({ mode }) => {
       ></div>
 
       <div
-        className={`px-5 About w-full h-[50vh] transition-all duration-300 gap-x-3 ${
+        className={`p-5 About w-full h-[50vh] transition-all duration-300 gap-x-3 ${
           mode === "light" ? "bg-white" : "bg-black"
         } flex`}
         id="11"
       >
         <div className="w-[40%] h-full  about-image">
           <img
-            src={construction}
+            src={aboutImage}
             alt="Construction"
             className={`w-full h-full object-contain transition-all duration-300 `}
           />
@@ -96,10 +98,11 @@ const Home = ({ mode }) => {
       </div>
 
       <div
-        className={`w-full h-[2px] mt-4 mx-auto transition-all duration-300 ${
-          mode === "light" ? "bg-gray-300" : "bg-gray-500"
-        }`}
+        className={`w-full h-[2px]  mx-auto transition-all duration-300 
+        ${mode === "light" ? "bg-gray-300" : "bg-gray-500"}`}
       ></div>
+
+      
 
       <div
         className={`w-full transition-all duration-300 py-10 ${
@@ -256,11 +259,17 @@ const Home = ({ mode }) => {
       </div>
 
       <div
-        className={`w-full h-[2px] mt-4 mx-auto transition-all duration-300 ${
-          mode === "light" ? "bg-gray-300" : "bg-gray-500"
-        }`}
+        className={`w-full h-[2px]  mx-auto transition-all duration-300 
+        ${mode === "light" ? "bg-gray-300" : "bg-gray-500"}`}
       ></div>
 
+      
+      <div className={`w-full h-[600px] ${mode === "light" ? "bg-white" : "bg-black"} flex justify-center items-center px-5`}>
+          <Slider/>
+      </div>
+
+
+     
       <Footer/>
     </main>
   );
