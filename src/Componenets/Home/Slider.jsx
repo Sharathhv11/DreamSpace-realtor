@@ -5,18 +5,16 @@ import img1 from "./../../assets/IMG-20250316-WA0001.jpg";
 import img2 from "./../../assets/IMG-20250316-WA0013.jpg";
 import img3 from "./../../assets/IMG-20250316-WA0039.jpg";
 
+
 const images = [
   {
-    url: img1,
-    caption: "Amazing Sunset",
+    url: img1
   },
   {
-    url: img2,
-    caption: "Beautiful Forest",
+    url: img2
   },
   {
-    url: img3,
-    caption: "Stunning Beach",
+    url: img3
   },
 ];
 
@@ -39,7 +37,7 @@ export default function ImageSlider({mode}) {
   }, []);
 
   return (
-    <div className={`relative w-full max-w-5xl mx-auto overflow-hidden rounded-2xl shadow-lg h-[500px] flex items-center justify-center ${mode === "light" ? "bg-white" : "bg-black"}`}>
+    <div className={`relative w-full max-w-5xl mx-auto overflow-hidden rounded-2xl shadow-lg h-[500px] flex items-center justify-center`}>
       <AnimatePresence exitBeforeEnter>
         <motion.div
           key={currentIndex}
@@ -54,21 +52,19 @@ export default function ImageSlider({mode}) {
             alt="slider image"
             className="w-full h-full object-cover object-center-bottom"
           />
-          <div className="absolute bottom-0 left-0 w-full bg-black/50 text-white text-center py-2">
-            {images[currentIndex].caption}
-          </div>
+         
         </motion.div>
       </AnimatePresence>
 
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70 cursor-pointer"
       >
         <ChevronLeft size={32} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70"
+        className="cursor-pointer absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 text-white p-3 rounded-full hover:bg-black/70"
       >
         <ChevronRight size={32} />
       </button>

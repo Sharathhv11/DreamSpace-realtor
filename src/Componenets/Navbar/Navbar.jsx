@@ -19,10 +19,10 @@ const Navbar = ({ setVisibility, mode,changeMode }) => {
           <a href="#11" className={`poppins-regular font-semibold capitalize transition-all duration-300 ${mode === 'light' ? 'text-black' : 'text-white'}`}>About Us</a>
         </div>
         <div className={`w-[130px] h-[44px] border-2 flex justify-center items-center rounded-[8px] transition-all duration-300 ${mode === 'light' ? 'border-black' : 'border-white'}`}>
-          <a href="#" className={`poppins-regular font-semibold capitalize transition-all duration-300 ${mode === 'light' ? 'text-black' : 'text-white'}`}>Our Services</a>
+          <a href="#services" className={`poppins-regular font-semibold capitalize transition-all duration-300 ${mode === 'light' ? 'text-black' : 'text-white'}`}>Our Services</a>
         </div>
         <div className={`w-[130px] h-[44px] ${mode === "light" ? "bg-[#6A00FF]" : "bg-[#00FF3C]"}   flex justify-center items-center rounded-[8px] ${mode === "light" ? "hover:bg-[#6a00ffe2]" : "hover:bg-[#00ff3ce6]"} `}>
-          <a href="#" className={`poppins-regular font-semibold capitalize ${mode === "dark" ? "text-black" : "text-white"}`}>Contact Us</a>
+          <a href="#contact" className={`poppins-regular font-semibold capitalize ${mode === "dark" ? "text-black" : "text-white"}`}>Contact Us</a>
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import construction from "./../../assets/construction.png";
 import Footer from "./Footer";
 import Slider from "./Slider" 
 import aboutImage from "./../../assets/IMG-20250316-WA0005.jpg"
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Home = ({ mode }) => {
   return (
@@ -87,11 +88,7 @@ const Home = ({ mode }) => {
                 mode === "light" ? "text-black" : "text-white"
               } text-justify poppins-regular`}
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Adipisci, recusandae totam fugit repellat expedita maiores veniam
-              itaque minima ducimus! Ab accusantium, aspernatur labore rerum
-              impedit esse? Et nemo amet ullam. Mollitia nesciunt soluta maiores
-              facere,
+             At DreamSpace Realtors, we turn your dreams into reality by offering premium land deals and top-notch construction services. With a strong commitment to quality and customer satisfaction, we have successfully helped 20+ happy clients find their perfect property and build their dream spaces.
             </p>
           </div>
         </div>
@@ -110,7 +107,7 @@ const Home = ({ mode }) => {
         }`}
       >
         {/* Header */}
-        <div className="w-full flex justify-center items-center px-5 mb-10">
+        <div id="services" className="w-full flex justify-center items-center px-5 mb-10">
           <h3
             className={`poppins-regular font-semibold text-4xl ${
               mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
@@ -264,9 +261,32 @@ const Home = ({ mode }) => {
       ></div>
 
       
-      <div className={`w-full h-[600px] ${mode === "light" ? "bg-white" : "bg-black"} flex justify-center items-center px-5`}>
+      <div className={`w-full h-[600px] ${mode === "light" ? "bg-white" : "bg-black"} flex justify-center items-center px-5 flex-col`}>
+      <h3
+              className={`poppins-regular font-semibold text-4xl slogan  w-full  h-[10%]   mt-3 ${
+                mode === "light" ? "text-[#6A00FF]" : "text-[#00FF3C]"
+              } capitalize  flex justify-center items-center`}
+            >
+              our work
+            </h3>
           <Slider/>
       </div>
+
+      <div className={`w-full h-[300px] ${mode === "light" ? "bg-white" : "bg-black"} flex justify-center items-center text-white px-5 `}>
+          <div className="w-[400px] h-[150px] rounded-2xl bg-[#6A00FF]">
+              <div className="w-full h-[30%] flex justify-center items-center  poppins-regular font-extrabold text-4xl relative top-2">
+                Got Any Query?
+              </div>
+              <div className="w-full h-[60%] flex justify-center items-center ">
+                <div className="w-[300px] h-[50px] bg-[#00e535] rounded poppins-regular flex justify-center items-center gap-x-1.5 cursor-pointer">
+                <FaWhatsapp size={24}/>
+                  <h3 className="font-semibold">whatsapp us</h3>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      
 
 
      

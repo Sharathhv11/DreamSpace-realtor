@@ -23,11 +23,11 @@ const Footer = () => {
         </div>
 
         {/* Contact Info */}
-        <div>
+        <div id="contact">
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-          <p>Email: info@dreamspacerealtors.com</p>
-          <p>Phone: +1 (123) 456-7890</p>
-          <p>Address: 123 Dream Street, Real Estate City, RE 12345</p>
+          <p>Email: dreamspacerealtors@gmail.com</p>
+          <p>Phone: +91 93806 06225</p>
+          <p>Address: vijaynagar 2nd stage Hassan 573201</p>
           <div className="mt-4 flex space-x-4">
             <a href="https://facebook.com" aria-label="Facebook" className="text-white hover:text-gray-400"><FaFacebook size={24} /></a>
             <a href="https://twitter.com" aria-label="Twitter" className="text-white hover:text-gray-400"><FaTwitter size={24} /></a>
