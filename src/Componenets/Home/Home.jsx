@@ -3,7 +3,7 @@ import "./home.css";
 import construction from "./../../assets/construction.png";
 import Footer from "./Footer";
 import Slider from "./Slider" 
-import aboutImage from "./../../assets/IMG-20250316-WA0005.jpg"
+import aboutImage from "./../../assets/aboutImage.jpg"
 import { FaWhatsapp } from 'react-icons/fa';
 
 const Home = ({ mode }) => {
@@ -272,17 +272,21 @@ const Home = ({ mode }) => {
           <Slider/>
       </div>
 
-      <div className={`w-full h-[300px] ${mode === "light" ? "bg-white" : "bg-black"} flex justify-center items-center text-white px-5 `}>
+      <div className={`w-full h-[300px] ${mode === "light" ? "bg-white" : "bg-black"} flex justify-center items-center text-white px-5 `} id="contact">
           <div className="w-[400px] h-[150px] rounded-2xl bg-[#6A00FF]">
               <div className="w-full h-[30%] flex justify-center items-center  poppins-regular font-extrabold text-4xl relative top-2">
                 Got Any Query?
               </div>
+                <a href="https://wa.me/9380606225" target="_blank" className="w-full h-[60%] flex justify-center items-center">
               <div className="w-full h-[60%] flex justify-center items-center ">
                 <div className="w-[300px] h-[50px] bg-[#00e535] rounded poppins-regular flex justify-center items-center gap-x-1.5 cursor-pointer">
+
                 <FaWhatsapp size={24}/>
                   <h3 className="font-semibold">whatsapp us</h3>
+
                 </div>
               </div>
+                </a>
           </div>
       </div>
 

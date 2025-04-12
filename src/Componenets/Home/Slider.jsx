@@ -4,6 +4,10 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import img1 from "./../../assets/IMG-20250316-WA0001.jpg";
 import img2 from "./../../assets/IMG-20250316-WA0013.jpg";
 import img3 from "./../../assets/IMG-20250316-WA0039.jpg";
+import img4 from "./../../assets/image4.jpg";
+import img5 from "./../../assets/image5.jpg";
+import img6 from "./../../assets/image6.jpg";
+
 
 
 const images = [
@@ -16,6 +20,14 @@ const images = [
   {
     url: img3
   },
+  {
+    url: img4
+  },
+  {
+    url: img5
+  },{
+    url: img6
+  }
 ];
 
 export default function ImageSlider({mode}) {

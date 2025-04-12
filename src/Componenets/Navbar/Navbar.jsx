@@ -5,7 +5,7 @@ import { Menu,SunMoon } from 'lucide-react'
 const Navbar = ({ setVisibility, mode,changeMode }) => {
   return (
     <nav className={`w-full h-[80px] flex justify-between items-center px-[20px] absolute transition-all duration-300 ${mode === 'light' ? 'bg-white' : 'bg-black'}`}>
-      <figure className='min-w-1/4 h-full flex justify-center items-center'>
+      <figure className='min-w-1/4 h-full flex justify-start items-center '>
         <img 
           src={logo} 
           alt="DreamSpace Realtors" 

@@ -15,10 +15,9 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           <ul>
-            <li><a href="/about" className="hover:underline">About Us</a></li>
-            <li><a href="/services" className="hover:underline">Services</a></li>
-            <li><a href="/properties" className="hover:underline">Properties</a></li>
-            <li><a href="/contact" className="hover:underline">Contact Us</a></li>
+            <li><a href="#11" className="hover:underline">About Us</a></li>
+            <li><a href="#services" className="hover:underline">Services</a></li>
+            <li><a href="#contact" className="hover:underline">Contact Us</a></li>
           </ul>
         </div>
 
@@ -29,10 +28,10 @@ const Footer = () => {
           <p>Phone: +91 93806 06225</p>
           <p>Address: vijaynagar 2nd stage Hassan 573201</p>
           <div className="mt-4 flex space-x-4">
-            <a href="https://facebook.com" aria-label="Facebook" className="text-white hover:text-gray-400"><FaFacebook size={24} /></a>
-            <a href="https://twitter.com" aria-label="Twitter" className="text-white hover:text-gray-400"><FaTwitter size={24} /></a>
-            <a href="https://instagram.com" aria-label="Instagram" className="text-white hover:text-gray-400"><FaInstagram size={24} /></a>
-            <a href="https://linkedin.com" aria-label="LinkedIn" className="text-white hover:text-gray-400"><FaLinkedin size={24} /></a>
+            {/* <a href="https://facebook.com" aria-label="Facebook" className="text-white hover:text-gray-400"><FaFacebook size={24} /></a>
+            <a href="https://twitter.com" aria-label="Twitter" className="text-white hover:text-gray-400"><FaTwitter size={24} /></a> */}
+            <a href="https://www.instagram.com/dreamspace_.realtors/?utm_source=ig_web_button_share_sheet" aria-label="Instagram" className="text-white hover:text-gray-400"><FaInstagram size={24} /></a>
+            {/* <a href="https://linkedin.com" aria-label="LinkedIn" className="text-white hover:text-gray-400"><FaLinkedin size={24} /></a> */}
           </div>
         </div>
       </div>

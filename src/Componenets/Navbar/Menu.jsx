@@ -16,10 +16,10 @@ const Menu = ({visiblity,setVisibility,mode}) => {
           <a href="#11" className='poppins-regular font-semibold  text-white capitalize'>About Us</a>
         </div>
         <div className='w-[130px] h-[44px] border-2 border-white flex justify-center items-center rounded-[8px]'>
-          <a href="#" className='poppins-regular font-semibold  text-white capitalize'>Our Services</a>
+          <a href="#services" className='poppins-regular font-semibold  text-white capitalize'>Our Services</a>
         </div>
         <div className={`w-[130px] h-[44px] bg-[#00FF3C] flex justify-center items-center rounded-[8px] ${mode === "light" ? "bg-[#6A00FF]" : "bg-[#00FF3C]"} ${mode === "light" ? "hover:bg-[#6a00ffe2]" : "hover:bg-[#00ff3ce6]"}`}>
-          <a href="#" className={`poppins-regular font-semibold  ${mode === "dark" ? "text-black" : "text-white"} capitalize`}>contact us</a>
+          <a href="#contact" className={`poppins-regular font-semibold  ${mode === "dark" ? "text-black" : "text-white"} capitalize`}>contact us</a>
         </div>
         </div>
     </div>
