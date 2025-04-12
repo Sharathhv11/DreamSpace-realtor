@@ -88,7 +88,7 @@ const Home = ({ mode }) => {
                 mode === "light" ? "text-black" : "text-white"
               } text-justify poppins-regular`}
             >
-             At DreamSpace Realtors, we turn your dreams into reality by offering premium land deals and top-notch construction services. With a strong commitment to quality and customer satisfaction, we have successfully helped 20+ happy clients find their perfect property and build their dream spaces.
+             At DreamSpace Realtors, we turn your dreams into reality by offering premium land deals and top-notch construction services. With a strong commitment to quality and customer satisfaction, we have successfully helped 40+ happy clients find their perfect property and build their dream spaces.
             </p>
           </div>
         </div>
